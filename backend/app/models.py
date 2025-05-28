@@ -14,7 +14,7 @@ class Usage(BaseModel):
 
 class ModerationResult(BaseModel):
     is_safe: bool
-    categories: Dict[str, float]  # e.g., {"violence": 0.9, "nudity": 0.1}
+    categories: Dict[str, float]  
 
 class ModerationResponse(BaseModel):
     result: ModerationResult
